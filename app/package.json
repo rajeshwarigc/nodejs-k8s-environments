@@ -1,0 +1,9 @@
+{
+  "name": "nodejs-k8s-environments",
+  "version": "1.0.0",
+  "description": "Node.js application deployed to Kubernetes with dev, qa and prod namespaces",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  }
+}
