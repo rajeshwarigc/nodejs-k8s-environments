@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Node.js Kubernetes Demo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>🚀 Static Website hosted using Node.js</h1>
+  <p>Environment: <b id="env"></b></p>
+  <p>Message: <b id="msg"></b></p>
+
+  <script>
+    fetch('/env')
+      .then(res => res.json())
+      .then(data => {
+        document.getElementById('env').innerText = data.env;
+        document.getElementById('msg').innerText = data.message;
+      });
+  </script>
+</body>
+</html>
